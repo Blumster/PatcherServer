@@ -1,0 +1,846 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:43:02 febr. 6, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:50:42 jún. 13, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* CSS Document */
+
+/* GENERAL TAG STYLES ------------------------------------------------------------------------- */
+
+body {
+	background-color:#000000;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+}
+
+tr, td {
+	font-size:12px;
+}
+
+h1, h2, h3, h4, h5, h6 {color: #CC9720;}
+
+h1 {font-size: 16px}
+h2 {font-size:14px}
+h3 {font-size: 12px}
+h4 {font-size: 12px; font-style:italic; color:#FFFFFF;}
+
+A:link, A:visited {
+	color: #E6BF4C;
+	text-decoration: none;
+}
+
+A:Hover {
+	text-decoration: underline;
+}
+
+A:active {
+	color: #E6BF4C;
+	text-decoration: none;
+}
+
+/*ul li, ul ul li{
+	list-style:url(/web/20060206154302/http://www.autoassault.com/images/news_bullet.jpg);
+	margin-top:10px;
+	margin-bottom:10px;
+}
+ul ul li {
+	list-style:url(/web/20060206154302/http://www.autoassault.com/images/news_bullet2.jpg);
+}*/
+
+/* NAVIGATION STYLES ---------------------------------------------------------------------------- */
+#navInner{
+	padding-top: 25px;
+	text-align: left;
+}
+.menuSubsContainer{
+	display: none;
+	filter: alpha(opacity=90);
+	opacity: .9;
+	float: left;
+	position: absolute;
+	z-index:500;
+}
+.menuTitle{
+	cursor: pointer;
+	font-size: 12px;
+
+}
+.menuTitle p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 29px;
+}
+.subNavElement{
+	cursor: pointer;
+	font-size: 12px;
+	padding-left: 29px;
+}
+.navTopElement{
+	padding-left: 8px;
+}
+.menuSubText{
+	border-left: solid 1px #A0A0A0;
+	border-right: solid 1px #A0A0A0;
+	padding: 2px;
+	font-size: 11px;
+	cursor: pointer;
+	background: #000000;
+	font-weight: bold;
+	padding-right: 15px;
+
+}
+.menuSubTextBorderTop{
+	border-bottom: solid 1px #D1D1D4;
+	margin-left: 1px;
+	margin-right: 1px;
+	clear: both;
+	font-size: 1px;
+}
+.menuSubTextBorderBottom{
+	border-top: solid 1px #898989;
+	margin-left: 1px;
+	margin-right: 1px;
+	clear: both;
+	font-size: 1px;
+}
+
+/* SHARED LAYOUT STYLES ------------------------------------------------------------------------- */
+
+div#consoleBetaLink{
+	width: 189px;
+	float: left;
+}
+div#consoleBetaLink a{
+	position: relative;
+	top: 13px;
+	left: 38px;
+	display: block;
+	width: 135px;
+	height: 26px;
+}
+
+#homePageSwitch{
+	width: 189px;
+	float: left;
+	font-size: 12px;
+	text-align: left;
+}
+
+div#hpSwitchAdvanced{
+	position: relative;
+	left: 103px;
+	top: 22px;
+	background: url(/web/20060206154302/http://www.autoassault.com/images/btn_advanced.jpg);
+	width: 72px;
+	height: 25px;
+}
+div#hpSwitchAdvanced a{
+	display: block;
+	width: 72px;
+	height: 25px;
+}
+
+div#hpSwitchBasic{
+	position: relative;
+	top: -3px;
+	left: 18px;
+	background: url(/web/20060206154302/http://www.autoassault.com/images/btn_basic.jpg);
+	width: 78px;
+	height: 25px;
+}
+div#hpSwitchBasic a{
+	display: block;
+	width: 78px;
+	height: 25px;
+}
+
+#centeringDiv {
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#FAQlistBoxCategories a{
+	font-weight: bold;
+}
+
+#mainBanner {
+	width:949px;
+	height:236px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#mainBody {
+	width:949px;
+	margin-left:auto;
+	margin-right: auto;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/bg_main_tile.gif);
+	background-repeat:repeat-y;
+}
+
+#leftColumn {
+	width:170px;
+	float:left;
+	display:inline;
+	margin-left:6px;
+	margin-top:11px;
+	height:auto;
+}
+
+#rightColumn {
+	width:760px;
+	float:left;
+	display:inline;
+	margin-left:6px;
+	margin-top:6px;		
+	height:auto;
+}
+
+#flags {
+	width:166px;
+	height:24px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/flags.jpg);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#flags a.flag1 {
+	display:block;
+	height:24px;
+	width:40px;
+	float:left;
+}
+
+#flags a.flag2 {
+	display:block;
+	height:24px;
+	width:40px;
+	float:left;	
+}
+
+#flags a.flag3 {
+	display:block;
+	height:24px;
+	width:43px;
+	float:left;
+}
+
+#flags a.flag4 {
+	display:block;
+	height:24px;
+	width:43px;
+	float:left;	
+}
+
+#nav {
+	width:170px;
+	height:889px;
+	margin-top:9px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/nav_bg.jpg);
+	background-repeat: no-repeat;
+}
+	
+#console {
+	width:760px;
+	height:55px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/console.jpg);
+	font-size:36px;
+	font-weight:bold;
+	color:#FF0000;
+}
+
+#containers {
+	width:760px;
+	height:780px;
+	margin-top:6px;
+	position:relative;
+}
+
+#containers div a {
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+#container1 {
+	width:416px;
+	height:525px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_recon.jpg);
+}
+
+#container1 a.news {
+	position:absolute;
+	display:block;
+	height:16px;
+	width:90px;
+	left:320px;
+	top:20px;
+}
+
+#container1 a.about {
+	position:absolute;
+	display:block;
+	height:125px;
+	width:220px;
+	left:193px;
+	top:210px;
+}
+
+#container2 {
+	width:416px;
+	height:246px;
+	position:absolute;
+	left:0px;
+	top:525px;
+	margin-top:8px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_feature.jpg);
+}
+
+#container3 {
+	width:338px;
+	height:220px;
+	position:absolute;
+	left:416px;
+	top:0px;
+	margin-left:6px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_pre-order.jpg);
+}
+
+#container4 {
+	width:168px;
+	height:298px;
+	position:absolute;
+	left:416px;
+	top:220px;
+	margin-left:6px;
+	margin-top:8px;	
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_screensaver.jpg);
+}
+
+#container5 {
+	width:168px;
+	height:298px;
+	position:absolute;
+	left:590px;
+	top:220px;
+	margin-left:6px;
+	margin-top:8px;	
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_beta.jpg);
+}
+
+#container6 {
+	width:338px;
+	height:247px;
+	position:absolute;
+	left:0px;
+	left:416px;	
+	top:525px;
+	margin-left:6px;	
+	margin-top:8px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_movies.jpg);
+}
+
+#partners {
+	width:758px;
+	height:72px;
+	margin-top:8px;
+	position:relative;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/box_partners.jpg);
+}
+
+#partners a.partner1 {
+	position:absolute;
+	display:block;
+	height:53px;
+	width:116px;
+	left:166px;
+	top:7px;
+}
+
+#partners a.partner2 {
+	position:absolute;
+	display:block;
+	height:55px;
+	width:90px;
+	left:302px;
+	top:7px;
+}
+
+#partners a.partner3 {
+	position:absolute;
+	display:block;
+	height:55px;
+	width:125px;
+	left:430px;
+	top:7px;
+}
+
+#partners a.partner4 {
+	position:absolute;
+	display:block;
+	height:55px;
+	width:140px;
+	left:590px;
+	top:7px;
+}
+
+#bottomBorder {
+	width:949px;
+	height:4px;
+	line-height:4px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/bottom_border.gif);
+}
+
+#marketingColumn {
+	width:168px;
+	height:auto;
+	margin-top:6px;
+	float:right;
+	display:inline;
+}
+
+#marketingColumn div a {
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+#contentColumn {
+	width:584px;
+	height:auto;
+	margin-top:6px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/bg_content.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	display:inline;	
+}
+
+#wideColumn {
+	width:761px;
+	height:auto;
+	margin-top:6px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/bg_content_wide.jpg);
+	background-repeat:repeat-y;
+}
+
+#fullColumn {
+	width:937px;
+	height:auto;
+	margin-top:6px;
+	margin-left:6px;	
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/bg_content_full.jpg);
+	background-repeat:repeat-y;
+}
+
+#headerGameinfo {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_gameinfo.jpg);
+}
+
+#headerDownloads {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_downloads.jpg);
+}
+
+#headerNews {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_news.jpg);
+}
+
+#headerSupport {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_support.jpg);
+}
+
+#headerPress {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_press.jpg);
+}
+
+#headerPreorder {
+	width:761px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_pre-order_wide.jpg);
+}
+
+#headerPlayNC{
+	width:761px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_plaync_account.jpg);
+}
+
+#headerCommunityFull {
+	width:937px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_community_full.jpg);
+}
+
+#headerCommunity {
+	width:584px;
+	height:17px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/header_community.jpg);
+}
+
+#subheadFAQ {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_faq.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadMovies {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_movies.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadWallpapers {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_wallpapers.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadBiomek {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_biomek.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadConceptArt{
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_conceptart.jpg);
+	margin:10px auto 0px auto;
+	background-position: right;
+	float: right;
+	clear: both;
+	margin-right: 3px;
+}
+
+#subheadContests {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_contests.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadHuman {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_human.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadMutant {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_mutant.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadEnemies {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_enemies.jpg);
+	margin:10px auto 20px auto;
+}
+
+#subheadLocations {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_locations.jpg);
+	margin:10px auto 20px auto;
+}
+
+#subheadFeatures {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_features.jpg);
+	margin:10px auto 20px auto;
+}
+
+#subheadHistory {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_history.jpg);
+	margin:10px auto 20px auto;
+}
+
+#subheadLexicon {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_lexicon.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadScreenshots{
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_screenshots.jpg);
+	margin:10px auto 0px auto;
+	background-position: right;
+	float: right;
+	clear: both;
+	margin-right: 3px;
+}
+
+#subheadVHS {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_vhs.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadSkilltree {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_skill_tree.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadArenas {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_arenas.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadReleases {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_press_releases.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadAwards {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_awards.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadPreviews {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_previews.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadInterviews {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_interviews.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadEvents {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_events.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadLatestnews {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_latestnews.jpg);
+	margin-left:auto;
+	margin-right:auto;	
+	margin-top:10px;
+}
+
+#subheadArchivenews {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_archivenews.jpg);
+	margin-left:auto;
+	margin-right:auto;	
+	margin-top:10px;
+}
+
+#subheadSpotlight {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_spotlight.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadScreensaver {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_screensaver.jpg);
+	margin:10px auto 0px auto;
+}
+
+#subheadWebkits {
+	width:544px;
+	height:130px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sh_webkits.jpg);
+	margin:10px auto 0px auto;
+}
+
+#contentBottom {
+	width:584px;
+	height:29px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/content_bottom.jpg);
+}
+
+#contentBottomWide {
+	width:761px;
+	height:28px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/content_bottom_wide.jpg);
+}
+
+#contentBottomFull {
+	width:937px;
+	height:28px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/content_bottom_full.jpg);
+}
+
+#contentBody {
+	text-align:left;
+	width:564px;
+	height:auto;
+	margin-left: 10px;
+	margin-right:10px;
+
+}
+
+#contentBodyWide {
+	text-align:left;
+	width:741px;
+	height:auto;
+	margin-left: 10px;
+	margin-right:10px;
+}
+
+#contentBodyFull {
+	text-align:left;
+	width:917px;
+	height:auto;
+	margin-left: 10px;
+	margin-right:10px;
+
+}
+
+#sideBox1 {
+	width:165px;
+	height:220px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sidebox_pre-order.jpg);
+}
+
+#sideBox2 {
+	width:168px;
+	height:298px;
+	margin-top:8px;
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sidebox_beta.jpg);
+}
+
+#sideBox3 {
+	width:166px;
+	height:246px;
+	margin-top:8px;	
+	background-image:url(/web/20060206154302/http://www.autoassault.com/images/sidebox_movies.jpg);
+}
+
+.clearBoth {
+	clear:both; 
+    height:1px;
+    overflow:hidden;
+}
+
+/* PLAYNC TOPHAT STYLES ------------------------------------------------------------------------- */
+
+#tophat {
+	font-size:11px;
+	font-weight:bold;
+	width:962px;
+	height:20px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:5px;
+	margin-bottom:5px;	
+}
+
+#tophatLogo {
+	float:left;
+	display: inline; 
+}
+
+#tophatLogo img {
+	width:84px; 
+	height:14px; 
+	border:0px;
+	margin:2px 7px 0px 10px;
+}
+
+#tophatSeparator {
+	float:left;
+	display:inline;
+	width:2px;
+	height:20px;
+	background-color:#FFFFFF;
+}
+
+#tophatLinks {
+	float:left;
+	display:inline;
+	margin-left:20px;
+}
+
+#tophatLinks A:link, #tophatLinks A:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#tophatLinks A:hover {
+	text-decoration:underline;
+}
+
+.divider{
+	border-bottom:1px dashed #333;
+	height:1px;
+	line-height:1px;
+}
+
+/* FOOTER STYLES ------------------------------------------------------------------------- */
+#footer {
+	width:949px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:4px;
+}
+
+#footer A:link, #footer A:visited {
+	color:#E6BF4C;
+	font-size:10px;
+	text-decoration:none;
+}
+
+#footer A:hover {
+	text-decoration:underline;
+}
